@@ -1,0 +1,90 @@
+
+
+
+
+.large-navigation
+{
+
+
+position: fixed;
+height: 92vh;
+overflow-y: scroll;
+width: 15%;
+color: white;
+z-index: 1;
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.large-navigation::-webkit-scrollbar
+{
+
+display: none;
+}
+
+.small-navigation{
+    
+    width: 40px;
+    
+}
+.small-navigation p{
+    display: none;
+}
+.small-navigation h4
+{
+    display: none;
+}
+.small-navigation .you-item
+{
+    display: none;
+}
+.small-navigation .Subcribe-item
+{
+    display: none;
+}
+.small-navigation .navi-item
+{
+    margin-top: 20px;
+}
+.small-navigation hr{
+    display: none;
+}
+
+
+
+ .navi-item
+{
+  display: flex;
+  align-items: center;
+   padding: 15px 8px;  
+  border-radius: 10px;
+}
+.navi-item img
+{
+  margin-right: 30px;
+}
+.navi-item .channel-profile
+{
+  margin-right: 19px;
+}
+.hr-class
+{
+  margin: 10px;
+  background-color: rgb(163, 36, 36);
+}
+
+
+.navi-item:hover{
+  background-color: rgb(40, 40, 40);
+}
+
+
+
+
+
+.icon-size
+{
+  height: 20px;
+width: 20px;
+cursor: pointer; /* Pointer cursor on hover */
+}

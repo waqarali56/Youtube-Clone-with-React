@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
 
   return (
    
@@ -13,7 +13,7 @@ export default function Navbar() {
               src="./images/threebar.png"
               alt="threebar"
               className="three-bar"
-              
+              onClick={props.sidebarset}
             />
             
             <img
