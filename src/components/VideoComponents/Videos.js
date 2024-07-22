@@ -12,7 +12,7 @@ export default function Main(props) {
         }`}
       >
         <Categories />
-        <VideoGrid SearchVideo={props.SearchVideo} />
+        <VideoGrid searchVideo={props.searchVideo} />
       </div>
     </>
   );

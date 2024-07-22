@@ -7,9 +7,9 @@ export default function VideoGrid(props) {
     <div id="video-container">
       {videos
         .filter((item) => {
-          return props.SearchVideo.toLowerCase() === ""
+          return props.searchVideo.toLowerCase() === ""
             ? item
-            : item.title.toLowerCase().includes(props.SearchVideo);
+            : item.title.toLowerCase().includes(props.searchVideo.toLowerCase());
         })
         .map((video, index) => (
           <div key={index} className="video-card">

@@ -1,26 +1,24 @@
 import './App.css';
-
-import Header from './components/Header';
 import React,{useState} from 'react';
-import Main from './components/Main';
+import Layout from './components/Layout';
 
 
 
 function App() {
   
   const [sideBar,setSideBar]=useState(true);
-  const [SearchVideo,SetSearchVideo]=useState('');
+  const [searchVideo,setSearchVideo]=useState('');
 
   
-  function sidebarset()
+  function onClickMenu()
   {
     
     setSideBar(!sideBar);
     
   }
-   function getInput(e)
+   function onChangeInput(e)
    {
-    SetSearchVideo(e.target.value);
+    setSearchVideo(e.target.value);
    }
 
 
@@ -28,10 +26,7 @@ function App() {
   return (
 
     <>
-    <Header  sidebarset={sidebarset}  getInput={getInput}/>
-    <Main sideBar={sideBar} SearchVideo={SearchVideo} />
-     
-
+    <Layout sideBar={sideBar} onClickMenu={onClickMenu}  searchVideo={searchVideo} onChangeInput={onChangeInput}/>
     </>
 
   );
