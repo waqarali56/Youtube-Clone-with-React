@@ -1,9 +1,8 @@
 import './App.css';
 
 import Header from './components/Header';
-import SideNavbar from './components/SideBar/SideNavbar';
-import Videos from './components/Videos';
 import React,{useState} from 'react';
+import Main from './components/Main';
 
 
 function App() {
@@ -23,11 +22,7 @@ function App() {
 
     <>
     <Header  sidebarset={sidebarset}/>
-    <div className='main'>
-    <SideNavbar sideBar={sideBar} />
-    <Videos sideBar={sideBar}/>
-    </div>
-  
+   <Main sideBar={sideBar}/>
     </>
 
   );

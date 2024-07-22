@@ -7,7 +7,7 @@ export default function VideoGrid() {
   return (
     < div id="video-container">
 
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/aaa.jpg" />
         </a>
@@ -25,7 +25,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/bbb.jpg" />
         </a>
@@ -42,7 +42,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ccc.jpg" />
         </a>
@@ -60,7 +60,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/fff.jpg" />
         </a>
@@ -77,7 +77,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/eee.jpg" />
         </a>
@@ -94,7 +94,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ggg.jpg" />
         </a>
@@ -114,7 +114,7 @@ export default function VideoGrid() {
       </div>
 
 
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/aaa.jpg" />
         </a>
@@ -132,7 +132,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/bbb.jpg" />
         </a>
@@ -149,7 +149,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ccc.jpg" />
         </a>
@@ -167,7 +167,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/fff.jpg" />
         </a>
@@ -184,7 +184,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/eee.jpg" />
         </a>
@@ -201,7 +201,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ggg.jpg" />
         </a>
@@ -220,7 +220,7 @@ export default function VideoGrid() {
         </div>
       </div>
 
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/aaa.jpg" />
         </a>
@@ -238,7 +238,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/bbb.jpg" />
         </a>
@@ -255,7 +255,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ccc.jpg" />
         </a>
@@ -273,7 +273,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/fff.jpg" />
         </a>
@@ -290,7 +290,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/eee.jpg" />
         </a>
@@ -307,7 +307,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ggg.jpg" />
         </a>
@@ -325,7 +325,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/aaa.jpg" />
         </a>
@@ -343,7 +343,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/bbb.jpg" />
         </a>
@@ -360,7 +360,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ccc.jpg" />
         </a>
@@ -378,7 +378,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/fff.jpg" />
         </a>
@@ -395,7 +395,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/eee.jpg" />
         </a>
@@ -412,7 +412,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ggg.jpg" />
         </a>
@@ -430,7 +430,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/aaa.jpg" />
         </a>
@@ -448,7 +448,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/bbb.jpg" />
         </a>
@@ -465,7 +465,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ccc.jpg" />
         </a>
@@ -483,7 +483,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/fff.jpg" />
         </a>
@@ -500,7 +500,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/eee.jpg" />
         </a>
@@ -517,7 +517,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ggg.jpg" />
         </a>
@@ -535,7 +535,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/aaa.jpg" />
         </a>
@@ -553,7 +553,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/bbb.jpg" />
         </a>
@@ -570,7 +570,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ccc.jpg" />
         </a>
@@ -588,7 +588,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/fff.jpg" />
         </a>
@@ -605,7 +605,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/eee.jpg" />
         </a>
@@ -622,7 +622,7 @@ export default function VideoGrid() {
           </div>
         </div>
       </div>
-      <div className="vid-list">
+      <div className="video-card">
         <a href="#ppp">
           <img className="vid-pic" src="./images/ggg.jpg" />
         </a>

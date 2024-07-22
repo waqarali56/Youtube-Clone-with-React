@@ -4,7 +4,7 @@ import VideoGrid from './VideoGrid';
 
 
 
-export default function Videos(props) {
+export default function Main(props) {
   return (
 
     <>
@@ -14,6 +14,6 @@ export default function Videos(props) {
     
     </div>
     </>
-
+    
   )
 }
