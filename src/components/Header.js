@@ -26,7 +26,7 @@ export default function Navbar(props) {
         </div>
         <div id="meddle-div" className="set-flex">
           <div id="input-box" className="set-flex">
-            <input id="search-input" type="text" placeholder="Search" />
+            <input id="search-input" type="text" placeholder="Search" onChange={props.getInput}/>
             <button id="search-button">
               <img
                 src="./images/search.png"

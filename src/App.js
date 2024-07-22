@@ -5,9 +5,12 @@ import React,{useState} from 'react';
 import Main from './components/Main';
 
 
+
 function App() {
   
   const [sideBar,setSideBar]=useState(true);
+  const [SearchVideo,SetSearchVideo]=useState('');
+
   
   function sidebarset()
   {
@@ -15,14 +18,20 @@ function App() {
     setSideBar(!sideBar);
     
   }
+   function getInput(e)
+   {
+    SetSearchVideo(e.target.value);
+   }
 
 
 
   return (
 
     <>
-    <Header  sidebarset={sidebarset}/>
-   <Main sideBar={sideBar}/>
+    <Header  sidebarset={sidebarset}  getInput={getInput}/>
+    <Main sideBar={sideBar} SearchVideo={SearchVideo} />
+     
+
     </>
 
   );

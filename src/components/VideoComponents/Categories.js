@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./VideoContainer.css";
 export default function Categories() {
   return (
     <>
