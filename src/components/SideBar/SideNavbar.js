@@ -3,7 +3,7 @@ import "./SideBar.css";
 
 export default function SideNavbar({ sideBar }) {
   return (
-    <>
+  
       <div className={`large-navigation ${sideBar ? "" : "small-navigation"}`}>
         <a className="navi-item" href="#home">
           <img src="./images/home.png" alt="shorts" className="icon-size" />
@@ -84,6 +84,6 @@ export default function SideNavbar({ sideBar }) {
         </div>
       
       </div>
-    </>
+ 
   );
 }
