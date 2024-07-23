@@ -1,33 +1,32 @@
 import './App.css';
-
-import Header from './components/Header';
-import SideNavbar from './components/SideBar/SideNavbar';
-import Videos from './components/Videos';
 import React,{useState} from 'react';
+import Layout from './components/Layout';
+
 
 
 function App() {
   
   const [sideBar,setSideBar]=useState(true);
+  const [searchVideo,setSearchVideo]=useState('');
+
   
-  function sidebarset()
+  function onClickMenu()
   {
     
     setSideBar(!sideBar);
     
   }
+   function onChangeInput(e)
+   {
+    setSearchVideo(e.target.value);
+   }
 
 
 
   return (
 
     <>
-    <Header  sidebarset={sidebarset}/>
-    <div className='main'>
-    <SideNavbar sideBar={sideBar} />
-    <Videos sideBar={sideBar}/>
-    </div>
-  
+    <Layout sideBar={sideBar} onClickMenu={onClickMenu}  searchVideo={searchVideo} onChangeInput={onChangeInput}/>
     </>
 
   );
