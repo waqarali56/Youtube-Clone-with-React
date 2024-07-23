@@ -1,16 +1,20 @@
 
 .Categories-and-Video-Container
 {
-  margin-left: 18%;
-  width: 82%;
   
-
+  margin-left: 18%;
+  margin-top: 60px;
+  margin-right: 1.5%;
+  width: 81%;
 }
 
 .large-Categories-and-Video-Container
 {
+  
   margin-left: 80px;
-  width: 95%;
+  width: 94%;
+  margin-right: 1.5%;
+  margin-top: 60px;
 }
 .large-Categories-and-Video-Container #video-container
 {

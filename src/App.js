@@ -1,6 +1,7 @@
 import './App.css';
 import React,{useState} from 'react';
 import Layout from './components/Layout';
+import Videos from './components/VideoComponents/Videos';
 
 
 
@@ -27,6 +28,7 @@ function App() {
 
     <>
     <Layout sideBar={sideBar} onClickMenu={onClickMenu}  searchVideo={searchVideo} onChangeInput={onChangeInput}/>
+    <Videos sideBar={sideBar} searchVideo={searchVideo}/>
     </>
 
   );
