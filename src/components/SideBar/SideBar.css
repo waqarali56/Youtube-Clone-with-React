@@ -4,8 +4,7 @@
 
 .large-navigation
 {
-
-
+  padding: 0px 0px 0px 1.5%;
 position: fixed;
 height: 92vh;
 overflow-y: scroll;
@@ -24,7 +23,8 @@ display: none;
 
 .small-navigation{
     
-    width: 40px;
+    width: 80px;
+    padding: 0px 0px 0px 1.5%;
     
 }
 .small-navigation p{
