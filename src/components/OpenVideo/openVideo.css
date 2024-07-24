@@ -1,308 +1,246 @@
-
 /* --------------------------------------------------------------------------------------------------------- */
-body{
-    background-color: rgb(0, 0, 0);
-  
+body {
+  background-color: rgb(0, 0, 0);
+
   padding: 0px;
   margin: 0px;
   color: white;
-  
+
   overflow-x: hidden;
-  }
-  
-  *{
+}
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
-  }
-  
-  i{
-    color: white;
-  }
-  
-  a{
+}
+
+i {
+  color: white;
+}
+
+a {
   text-decoration: none;
   color: white;
-  }
-  
-  img{
+}
+
+img {
   cursor: pointer;
-  }
-  
+}
 
-
-.user_pic
-{
+.user_pic {
   height: 25px;
   width: 25px;
   border-radius: 50px;
   cursor: pointer; /* Pointer cursor on hover */
 }
-.set_flex
-{
+.set_flex {
   display: flex;
   align-items: center;
 }
-
-
 
 /*--------------------- main container -------------- */
 
-#main_container
-{
-
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-  
+#main_container {
+  padding-right: 1%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-
-#other-video-container
-{
-    
-    width: 35%;
-    height: 100%;
-    display: inline-block;
+#other-video-container {
+  width: 35%;
+  height: 100%;
+  display: inline-block;
 }
 
-
-#top_bar_container
-{
-  background-color: black;  
-  height:30px;
+#top_bar_container {
+  background-color: black;
+  height: 30px;
   margin-top: 0px;
   padding-left: 10px;
-  width: 100%; 
+  width: 100%;
   color: white;
   display: flex;
   align-items: center;
-  flex-direction: row; 
+  flex-direction: row;
   overflow-x: scroll;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
-#top_bar_container::-webkit-scrollbar
-{
- 
+#top_bar_container::-webkit-scrollbar {
   display: none;
 }
 /* Hide scrollbar for IE, Edge and Firefox */
-#top_bar_container
-{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+#top_bar_container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-.category{
-
-
-margin-left: 10px;
-padding: 5px;
-font: bold ;
-height: 20px;
-width: 60px;
-display: flex;
-justify-content: center; 
-align-items: center;
-background-color: rgb(40, 40, 40);
-color: white;
-border-radius: 5px 5px ;
+.category {
+  margin-left: 10px;
+  padding: 5px;
+  font: bold;
+  height: 20px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border-radius: 5px 5px;
 }
-.category:hover{
+.category:hover {
   background-color: rgb(171, 16, 16);
 }
 
-
 /*---------------------right video container -------------- */
 
-
-#video-container-OpenVideo
-{
-
+#video-container-OpenVideo {
   padding-top: 5px;
   padding-left: 5px;
   display: flex;
   flex-direction: column;
 }
-.vid_list{
- 
-    
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    width: 100%; 
-    margin-top: 5px;
-   }
-
-   .vid_list:hover{
-    background-color: rgb(40, 40, 40);
-   }
-
-   .vid_list .vid_pic
-   {
-     border-radius: 5px;
-     width: 220px;
-     height: 130px;
-   }   
-
-   .vid_list .set-positon
-   {
-    margin-left: 5px;
-    margin-top: 10px;
-   }
-   
-   .video_info
-   {   
-    
-     width: 270px;
-     font-size: 20px;
-     white-space: nowrap;
-     overflow: hidden;
-     text-overflow: ellipsis;
-     margin-left: 5px;
-     padding-left: 5px;
-   }
-   
-   .video_detail{
-       padding-top: 20px;
-       color: rgb(150, 149, 149);
-   }
-   
- 
-
-                                   /*--------------------- wctch  video container -------------- */
-
-
-#watch-Video-comment-container
-{
-
-    width: 65%;
-    height: 5000px;
-
-    
-}
-#watch-Video-comment-container button
-{
-    border: none;
+.vid_list {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5px;
 }
 
-
-.watch-screen-divs
-{
-    background-color: #000000;
-    height: 550px;
-    width:100%;
-    margin-top: 10px;
-}
-.watch-video{
-   
-    
-    margin-top: 0px;
-    padding-top: 0px;
+.vid_list:hover {
+  background-color: rgb(40, 40, 40);
 }
 
-.watch-video .video-size
-{
-    height: 100%;
-    width: 100%;
-    
+.vid_list .vid_pic {
+  border-radius: 5px;
+  width: 180px;
+  height: 110px;
 }
 
-.watch-container
-{  padding-top: 10px;
-    padding-left: 5px;
-    height: 120px;
-    width: 100%;
+.vid_list .set-positon {
+  margin-left: 5px;
+  margin-top: 10px;
 }
 
-
-.watch-container .watch-title
-{
-    
-    padding-right: 10px;
-    font-size: 23px;
-    color: white;
+.video_info {
+  width: 270px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 5px;
+  padding-left: 5px;
 }
 
-.watch-container .watch-option
-{
+.video_detail {
+  padding-top: 20px;
+  color: rgb(150, 149, 149);
+}
+
+/*--------------------- wctch  video container -------------- */
+
+#watch-Video-comment-container {
+  width: 65%;
+  height: 5000px;
+}
+#watch-Video-comment-container button {
+  border: none;
+}
+
+.watch-screen-divs {
+  background-color: #000000;
+  height: 550px;
+  width: 100%;
+}
+.watch-video {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.watch-video .video-size {
+  height: 100%;
+  width: 100%;
+}
+
+.watch-container {
+  padding-top: 10px;
+  padding-left: 5px;
+  height: 120px;
+  width: 100%;
+}
+
+.watch-container .watch-title {
+  padding-right: 10px;
+  font-size: 23px;
+  color: white;
+}
+
+.watch-container .watch-option {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.watch-option .left-div-w
-{
-   
-    display: flex;
+.watch-option .left-div-w {
+  display: flex;
 
-    padding-top: 10px;
-    width: 350px;
+  padding-top: 10px;
+  width: 350px;
 }
 
-.left-div-w .channel-logo
-{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    cursor: pointer; /* Pointer cursor on hover */
+.left-div-w .channel-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.channel .channel-title
-{
-    font-size: 20px;
-    color: white;
-    padding-top: 5px;
-    padding-left: 10px;
+.channel .channel-title {
+  font-size: 20px;
+  color: white;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
-.channel .channel-sub
-{
-    color: rgb(123, 122, 122);
-    padding-left: 10px;
-    font-size: 14px;
-    padding-top: 5px;
+.channel .channel-sub {
+  color: rgb(123, 122, 122);
+  padding-left: 10px;
+  font-size: 14px;
+  padding-top: 5px;
 }
 
-.left-div-w .sub-button
-{
-font-size: 15px;
-background-color: white;
-color: rgb(0, 0, 0);
-height: 40px;
-width: 110px;
-margin-left: 20px;
-margin-top: 5px;
-border-radius: 25px 25px ;
-
+.left-div-w .sub-button {
+  font-size: 15px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  height: 40px;
+  width: 110px;
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 25px 25px;
 }
 
-
-
-.watch-option .right-div-w
-{
-    
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    width: 400px;
-
+.watch-option .right-div-w {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  width: 400px;
 }
 
-.like-video{
-    display: flex;
+.like-video {
+  display: flex;
 }
 
-.like-video .like-button
-{
-    margin-top: 5x;
-    height: 35px;
-    width:45px;
+.like-video .like-button {
+  margin-top: 5x;
+  height: 35px;
+  width: 45px;
   padding-left: 5px;
   background-color: rgb(40, 40, 40);
-  border-radius: 20px 0px 0px 20px ;
+  border-radius: 20px 0px 0px 20px;
   color: white;
-  cursor: pointer; /* Pointer cursor on hover */ 
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
 /* .icon-size
@@ -311,219 +249,172 @@ border-radius: 25px 25px ;
     width: 50px;
 } */
 
-.like-video .dislike-button
-{
-    margin-top: 5x;
+.like-video .dislike-button {
+  margin-top: 5x;
   height: 35px;
   width: 45px;
-  padding-right:5px;
+  padding-right: 5px;
   background-color: rgb(40, 40, 40);
   border-left: 2px solid rgb(74, 74, 74);
   color: white;
-  border-radius: 0 20px 20px 0; 
-  cursor: pointer; /* Pointer cursor on hover */ 
+  border-radius: 0 20px 20px 0;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.right-div-w .share-video-button
-{
-    margin-top: 5x;
-    background-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    height: 35px;
-    width: 70px;
-    border-radius: 20px 20px ;
+.right-div-w .share-video-button {
+  margin-top: 5x;
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  height: 35px;
+  width: 70px;
+  border-radius: 20px 20px;
 }
 
-.right-div-w .download-button
-{
-    margin-top: 5x;
-    background-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    height: 35px;
-    width: 110px;
-    border-radius: 20px 20px ;
+.right-div-w .download-button {
+  margin-top: 5x;
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  height: 35px;
+  width: 110px;
+  border-radius: 20px 20px;
 }
 
-.right-div-w .more-option-button
-{
-    background-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    height: 35px;
-    width: 35px;
-    border-radius: 25px ;
-
+.right-div-w .more-option-button {
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  height: 35px;
+  width: 35px;
+  border-radius: 25px;
 }
 
-  /*---------------------Commnet section     -------------- */
+/*---------------------Commnet section     -------------- */
 
-
-
-.discriptipn
-{   background-color: rgb(40, 40, 40);
-    height: 90px;
-    padding: 1px;
-    margin-right: 10px;
+.discriptipn {
+  background-color: rgb(40, 40, 40);
+  height: 90px;
+  padding: 1px;
+  margin-right: 10px;
 }
 
-
-.comment-section
-{
-    margin-top: 5px;
-    margin-right: 10px;
+.comment-section {
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
-
-.Write-comment-box{
-    display: flex;
-    margin-top: 15px;
-    
+.Write-comment-box {
+  display: flex;
+  margin-top: 15px;
 }
 
-.Write-comment-box .user_pofile
-{
-    height: 45px;
-    width: 45px;
-    border-radius: 50px;
-    cursor: pointer; /* Pointer cursor on hover */
+.Write-comment-box .user_pofile {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-
-.Write-comment-box  .input-submit-box
-{
- 
+.Write-comment-box .input-submit-box {
   width: 100%;
   margin-left: 10px;
-
 }
 
-.input-submit-box .take-input-box
-{
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-bottom: 1px solid rgb(180, 179, 179); /* Change the width and color as needed */
-    outline: none;
+.input-submit-box .take-input-box {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgb(180, 179, 179); /* Change the width and color as needed */
+  outline: none;
 }
 
 .input-submit-box .take-input-box:focus {
-    border-bottom: 2px solid rgb(255, 255, 255); /* Border color on focus/click */
+  border-bottom: 2px solid rgb(255, 255, 255); /* Border color on focus/click */
 }
 
-.input-submit-box .submitted-box
-{
-    display: flex;
-    width: 100%;
-    height: 26px;
-    margin-top: 1px;
-    justify-content: space-between;
-    padding-top: 5px;
+.input-submit-box .submitted-box {
+  display: flex;
+  width: 100%;
+  height: 26px;
+  margin-top: 1px;
+  justify-content: space-between;
+  padding-top: 5px;
 }
 
-.cancel-button
-{
-    margin-top: 5x;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    height: 20px;
-    width: 70px;
-    border-radius: 20px 20px ;
+.cancel-button {
+  margin-top: 5x;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  height: 20px;
+  width: 70px;
+  border-radius: 20px 20px;
 }
-#footer
-{
+#footer {
   background-color: white;
 }
-.cancel-button:hover
-{
-   
- background-color: rgb(49, 49, 49);;
-  
+.cancel-button:hover {
+  background-color: rgb(49, 49, 49);
 }
 
-
-.comment-button
-{
-    margin-top: 5x;
-    background-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    height: 20px;
-    width: 70px;
-    border-radius: 20px 20px ;
-
+.comment-button {
+  margin-top: 5x;
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  height: 20px;
+  width: 70px;
+  border-radius: 20px 20px;
 }
 
+/*---------------------Commnet List    -------------- */
 
-  /*---------------------Commnet List    -------------- */
-
-
-.comment-container
-{
-    
-    flex-direction: column;
-    margin-top: 60px;
+.comment-container {
+  flex-direction: column;
+  margin-top: 60px;
 }
 
-
-.com-list
-{
-    display: flex;
-    margin-right: 5px;
-
+.com-list {
+  display: flex;
+  margin-right: 5px;
 }
 
-.com-list .user_pofile
-{
-    height: 45px;
-    width: 45px;
-    border-radius: 50px;
-    cursor: pointer; /* Pointer cursor on hover */
+.com-list .user_pofile {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.middle-box 
-{
-    margin-left: 10px;
+.middle-box {
+  margin-left: 10px;
 }
 
-.middle-box .user-name
-{
-    display: flex;
+.middle-box .user-name {
+  display: flex;
 }
-.middle-box .comment-v
-{
-    color: rgb(212, 209, 209);
-    font-size: 15px;
+.middle-box .comment-v {
+  color: rgb(212, 209, 209);
+  font-size: 15px;
 
-    padding: 10px;
-
+  padding: 10px;
 }
 
-.com-react-box
-{
-    display: flex;
-    align-items: center;
+.com-react-box {
+  display: flex;
+  align-items: center;
 }
 
-.com-react-box .com-reaction
-{
-  
-    margin-left: 10px;
-    margin-right: 5px;
-    padding: 2px;
-    height: 25px;
-    width: 25px;
- 
+.com-react-box .com-reaction {
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 2px;
+  height: 25px;
+  width: 25px;
 }
 
-
-
-.com-react-box .com-replay
-{
-  
-    height: 30px;
-    width: 45px;
-    margin-left: 5px;
-    background-color: transparent;
-    color: white;
-    cursor: pointer; /* Pointer cursor on hover */
+.com-react-box .com-replay {
+  height: 30px;
+  width: 45px;
+  margin-left: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer; /* Pointer cursor on hover */
 }
-

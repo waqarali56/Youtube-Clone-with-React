@@ -1,26 +1,21 @@
-import React,{useContext} from "react";
-import { Context } from '../State/StateProvider';  // Import the context
-
+import React, { useContext } from "react";
+import { Context } from "../State/StateProvider"; // Import the context
 
 export default function Header() {
-
-  const {onClickMenu,onChangeInput}=useContext(Context);
+  const { onClickMenu, onChangeInput } = useContext(Context);
 
   return (
-   
-
     <>
       <nav id="head-container">
         <div id="left-div" className="set-flex">
           <div className="set-flex curser-pointer">
-            
             <img
               src="./images/threebar.png"
               alt="threebar"
               className="three-bar"
               onClick={onClickMenu}
             />
-            
+
             <img
               className="youtube-icon"
               src="./images/you_tube.png"
@@ -31,13 +26,17 @@ export default function Header() {
         </div>
         <div id="meddle-div" className="set-flex">
           <div id="input-box" className="set-flex">
-            <input id="search-input" type="text" placeholder="Search" onChange={onChangeInput}/>
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search"
+              onChange={onChangeInput}
+            />
             <button id="search-button">
               <img
                 src="./images/search.png"
                 alt="search"
                 className="icon-size"
-
               />
             </button>
           </div>
@@ -50,7 +49,13 @@ export default function Header() {
           />
         </div>
         <div id="right-div" className="set-flex">
-          <div className="upload-video"><img src="./images/uploadVideo.png" alt="video" className="icon-size" /></div>
+          <div className="upload-video">
+            <img
+              src="./images/uploadVideo.png"
+              alt="video"
+              className="icon-size"
+            />
+          </div>
           <div className="notifications-box">
             <button className="noti-button">
               <img src="./images/bell.png" alt="bell" className="icon-size" />
@@ -70,6 +75,3 @@ export default function Header() {
     </>
   );
 }
-
-
-
