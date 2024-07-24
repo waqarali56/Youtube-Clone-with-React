@@ -4,13 +4,14 @@
 
 .large-navigation
 {
-  padding: 0px 0px 0px 1.5%;
+  margin-top: 60px;
+  z-index: 1;
+  padding-left: 1.5%;
 position: fixed;
 height: 92vh;
 overflow-y: scroll;
 width: 15%;
 color: white;
-z-index: 1;
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
@@ -23,8 +24,10 @@ display: none;
 
 .small-navigation{
     
-    width: 80px;
-    padding: 0px 0px 0px 1.5%;
+    width: 5%;
+  
+  
+   
     
 }
 .small-navigation p{
@@ -45,6 +48,7 @@ display: none;
 .small-navigation .navi-item
 {
     margin-top: 20px;
+
 }
 .small-navigation hr{
     display: none;

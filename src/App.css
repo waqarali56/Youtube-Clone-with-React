@@ -32,11 +32,12 @@ cursor: pointer;
 
 #head-container
 {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(27, 27, 27);
+z-index: 2;
 width: 100vw;
 position:fixed;
 top: 0; /* Ensure the header sticks to the top */
-z-index: 10;       
+    
 height: 60px; 
 padding: 0px 1.5% 0px 1.5%;
 display: flex;
@@ -207,3 +208,17 @@ cursor: pointer; /* Pointer cursor on hover */
 
 
                                    /*--------------------- main section -------------- */
+.container
+{
+  position: absolute;
+  margin-left: 18%;
+  width: 82%;
+  margin-top: 60px;
+  background-color: grey;
+ 
+}
+
+.large-container
+{ margin-left: 5%;
+  width: 95%;
+}
