@@ -1,16 +1,21 @@
-import React from "react";
+import React,{useContext} from "react";
 import "./VideoContainer.css";
 import { Link } from 'react-router-dom';
 import { videos } from "../Data/data.js";
 
-export default function VideoGrid(props) {
+import { Context } from '../../State/StateProvider';  // Adjusted path
+
+export default function VideoGrid() {
+
+  const {searchVideo}=useContext(Context);
+
   return (
     <div id="video-container">
       {videos
         .filter((item) => {
-          return props.searchVideo.toLowerCase() === ""
+          return searchVideo.toLowerCase() === ""
             ? item
-            : item.title.toLowerCase().includes(props.searchVideo.toLowerCase());
+            : item.title.toLowerCase().includes(searchVideo.toLowerCase());
         })
         .map((video, index) => (
           <Link to="/openVideo"><div key={index} className="video-card" >

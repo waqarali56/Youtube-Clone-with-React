@@ -1,11 +1,11 @@
 import React,{useContext} from "react";
 import Header from "./Header";
 import SideNavbar from "./SideBar/SideNavbar";
-import Context from '../context/NoteContext';
 
+import { Context } from '../State/StateProvider';  // Import the context
 
-export default function Layout({ onChangeInput, children }) {
-  const a=useContext(Context);
+export default function Layout({children}) {
+  const {sideBar}=useContext(Context);
   return (
     <div>
 
@@ -13,7 +13,7 @@ export default function Layout({ onChangeInput, children }) {
       <SideNavbar  />
       <div
         className={`container ${
-          a.sideBar ? "" : "large-container"
+          sideBar ? "" : "large-container"
         }`}
       >
         {children}

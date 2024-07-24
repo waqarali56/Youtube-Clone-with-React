@@ -1,10 +1,10 @@
 import React,{useContext} from "react";
-import Context from '../context/NoteContext';
+import { Context } from '../State/StateProvider';  // Import the context
 
 
 export default function Header() {
 
-  const a=useContext(Context);
+  const {onClickMenu,onChangeInput}=useContext(Context);
 
   return (
    
@@ -18,7 +18,7 @@ export default function Header() {
               src="./images/threebar.png"
               alt="threebar"
               className="three-bar"
-              onClick={a.onClickMenu}
+              onClick={onClickMenu}
             />
             
             <img
@@ -31,7 +31,7 @@ export default function Header() {
         </div>
         <div id="meddle-div" className="set-flex">
           <div id="input-box" className="set-flex">
-            <input id="search-input" type="text" placeholder="Search" onChange={a.onChangeInput}/>
+            <input id="search-input" type="text" placeholder="Search" onChange={onChangeInput}/>
             <button id="search-button">
               <img
                 src="./images/search.png"

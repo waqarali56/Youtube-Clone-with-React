@@ -6,11 +6,11 @@ import { FaEllipsisVertical } from "react-icons/fa6";
 
 export default function OpenVideo() {
   return (
-    <div>
+   
       <div id="main_container">
         <div id="watch-Video-comment-container">
           <div className="watch-video">
-            
+
             <div className="watch-screen-divs">
               <video className="video-size" controls autoPlay>
                 <source src="./video/zz.mp4" type="video/mp4" />
@@ -355,6 +355,6 @@ export default function OpenVideo() {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }

@@ -1,10 +1,15 @@
 
 import React, { useState } from 'react'
-import Context from '../context/NoteContext';
+import { createContext } from "react";
+
+export  const Context = createContext();
 
 
 
-export default function State(props) {
+
+
+
+export default function StateProvider({children}) {
 
     const [searchVideo,setSearchVideo]= useState('');
 
@@ -18,10 +23,11 @@ export default function State(props) {
     setSideBar(!sideBar);
   }
  
+  const contextValue={searchVideo,onChangeInput,sideBar,onClickMenu};
 
   return (
-    <Context.Provider value={{searchVideo,onChangeInput,sideBar,onClickMenu}}>
-  {props.children}
+    <Context.Provider value={contextValue}>
+  {children}
     </Context.Provider>
     
   )

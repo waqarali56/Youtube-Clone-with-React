@@ -1,18 +1,20 @@
 import React,{useContext} from "react";
-import Context from '../../context/NoteContext';
 import "./SideBar.css";
+import { Link } from 'react-router-dom';
+import { Context } from '../../State/StateProvider';  // Adjusted path
+
 
 export default function SideNavbar() {
 
-  const a=useContext(Context);
+  const {sideBar}=useContext(Context);
 
   return (
   
-      <div className={`large-navigation ${a.sideBar ? "" : "small-navigation"}`}>
-        <a className="navi-item" href="#home">
+      <div className={`large-navigation ${sideBar ? "" : "small-navigation"}`}>
+        <Link to="/home" className="navi-item" href="#home">
           <img src="./images/home.png" alt="shorts" className="icon-size" />
           <p>Home </p>
-        </a>
+        </Link>
         <a className="navi-item" href="#shorts">
           <img src="./images/shorts.png" alt="shorts" className="icon-size" />
           <p>Shorts</p>
