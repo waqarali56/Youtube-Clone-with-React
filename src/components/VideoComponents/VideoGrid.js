@@ -1,5 +1,6 @@
 import React from "react";
 import "./VideoContainer.css";
+import { Link } from 'react-router-dom';
 import { videos } from "../Data/data.js";
 
 export default function VideoGrid(props) {
@@ -12,7 +13,7 @@ export default function VideoGrid(props) {
             : item.title.toLowerCase().includes(props.searchVideo.toLowerCase());
         })
         .map((video, index) => (
-          <div key={index} className="video-card">
+          <Link to="/openVideo"><div key={index} className="video-card" >
             <a href={video.videoLink}>
               <img
                 src={video.videoThumbnail}
@@ -33,6 +34,7 @@ export default function VideoGrid(props) {
               </div>
             </div>
           </div>
+          </Link>
         ))}
     </div>
   );

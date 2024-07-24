@@ -1,10 +1,14 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React,{useContext} from "react";
+import Context from '../../context/NoteContext';
 import "./SideBar.css";
 
-export default function SideNavbar({ sideBar }) {
+export default function SideNavbar() {
+
+  const a=useContext(Context);
+
   return (
   
-      <div className={`large-navigation ${sideBar ? "" : "small-navigation"}`}>
+      <div className={`large-navigation ${a.sideBar ? "" : "small-navigation"}`}>
         <a className="navi-item" href="#home">
           <img src="./images/home.png" alt="shorts" className="icon-size" />
           <p>Home </p>

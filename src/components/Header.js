@@ -1,9 +1,14 @@
-import React from "react";
+import React,{useContext} from "react";
+import Context from '../context/NoteContext';
 
-export default function Navbar(props) {
+
+export default function Header() {
+
+  const a=useContext(Context);
 
   return (
    
+
     <>
       <nav id="head-container">
         <div id="left-div" className="set-flex">
@@ -13,7 +18,7 @@ export default function Navbar(props) {
               src="./images/threebar.png"
               alt="threebar"
               className="three-bar"
-              onClick={props.onClickMenu}
+              onClick={a.onClickMenu}
             />
             
             <img
@@ -26,7 +31,7 @@ export default function Navbar(props) {
         </div>
         <div id="meddle-div" className="set-flex">
           <div id="input-box" className="set-flex">
-            <input id="search-input" type="text" placeholder="Search" onChange={props.onChangeInput}/>
+            <input id="search-input" type="text" placeholder="Search" onChange={a.onChangeInput}/>
             <button id="search-button">
               <img
                 src="./images/search.png"
