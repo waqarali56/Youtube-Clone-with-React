@@ -1,92 +1,80 @@
-
-
-
-
-.large-navigation
-{
+.large-navigation {
   margin-top: 60px;
+  padding: 10px;
   z-index: 1;
   padding-left: 1.5%;
-position: fixed;
-height: 92vh;
-overflow-y: scroll;
-width: 15%;
-color: white;
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-.large-navigation::-webkit-scrollbar
-{
-
-display: none;
+  position: fixed;
+  height: 92vh;
+  overflow-y: auto; /* Changed to auto to show scrollbar only when needed */
+  width: 17%;
+  color: white;
 }
 
-.small-navigation{
-    
-    width: 5%;
-  
-  
-   
-    
-}
-.small-navigation p{
-    display: none;
-}
-.small-navigation h4
-{
-    display: none;
-}
-.small-navigation .you-item
-{
-    display: none;
-}
-.small-navigation .Subcribe-item
-{
-    display: none;
-}
-.small-navigation .navi-item
-{
-    margin-top: 20px;
-
-}
-.small-navigation hr{
-    display: none;
+/* Scrollbar width */
+.large-navigation::-webkit-scrollbar {
+  width: 0px; /* Default to hidden */
 }
 
+/* Scrollbar track */
+.large-navigation::-webkit-scrollbar-track {
+  background: #2e2e2e; /* Track color */
+}
 
+/* Scrollbar handle */
+.large-navigation::-webkit-scrollbar-thumb {
+  background: #555; /* Handle color */
+}
 
- .navi-item
-{
+/* Show scrollbar on hover */
+.large-navigation:hover::-webkit-scrollbar {
+  width: 9px; /* Adjust width as needed */
+}
+
+.small-navigation {
+  width: 5%;
+}
+.small-navigation p {
+  display: none;
+}
+.small-navigation h4 {
+  display: none;
+}
+.small-navigation .you-item {
+  display: none;
+}
+.small-navigation .Subcribe-item {
+  display: none;
+}
+.small-navigation .navi-item {
+  margin-top: 20px;
+}
+.small-navigation hr {
+  display: none;
+}
+
+.navi-item {
   display: flex;
   align-items: center;
-   padding: 15px 8px;  
+  padding: 15px 8px;
   border-radius: 10px;
 }
-.navi-item img
-{
+.navi-item img {
   margin-right: 30px;
 }
-.navi-item .channel-profile
-{
+.navi-item .channel-profile {
   margin-right: 19px;
 }
-.hr-class
-{
+.hr-class {
   margin: 10px;
   background-color: rgb(163, 36, 36);
 }
 
-
-.navi-item:hover{
+.navi-item:hover {
   background-color: rgb(40, 40, 40);
 }
 
-
-
-.icon-size
-{
+.icon-size {
   height: 20px;
-width: 20px;
-cursor: pointer; /* Pointer cursor on hover */
+  width: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
 }

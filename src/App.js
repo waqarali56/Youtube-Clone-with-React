@@ -1,30 +1,27 @@
-import './App.css';
-import React,{useState} from 'react';
-import Layout from './components/Layout';
-import Videos from './components/VideoComponents/Videos';
-
-
+import "./App.css";
+import React, { useState } from "react";
+import Layout from "./components/Layout";
+import Videos from "./components/VideoComponents/Videos";
+import OpenVideo from "./components/OpenVideo/OpenVideo";
+import { Route, Routes } from "react-router-dom";
+import State from "./State/StateProvider";
+import StateProvider from "./State/StateProvider";
+import Shorts from "./components/shorts/Shorts";
 
 function App() {
-  
-  const [searchVideo,setSearchVideo]=useState('');
-  
-   function onChangeInput(e)
-   {
-    setSearchVideo(e.target.value);
-   }
-
-  
-
-
   return (
-
     <>
-    <Layout searchVideo={searchVideo}  onChangeInput={onChangeInput}>
-      <Videos searchVideo={searchVideo} />
-    </Layout>
+      <StateProvider>
+        <Layout>
+          <Routes>
+            <Route path="/home" element={<Videos />} exact />
+            <Route path="/openVideo" element={<OpenVideo />} />
+            <Route path="/shorts" element={<Shorts />} />
+            <Route path="/subscribeVideo" element={<Videos />} exact />
+          </Routes>
+        </Layout>
+      </StateProvider>
     </>
-
   );
 }
 

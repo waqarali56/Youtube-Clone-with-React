@@ -1,224 +1,194 @@
-
 /* --------------------------------------------------------------------------------------------------------- */
-body{
+body {
   background-color: rgb(0, 0, 0);
 
-padding: 0px;
-margin: 0px;
-color: white;
+  padding: 0px;
+  margin: 0px;
+  color: white;
 
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-*{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-i{
+i {
   color: white;
 }
 
-a{
-text-decoration: none;
-color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-img{
-cursor: pointer;
+img {
+  cursor: pointer;
 }
 
-#head-container
-{
+#head-container {
   background-color: rgb(27, 27, 27);
-z-index: 2;
-width: 100vw;
-position:fixed;
-top: 0; /* Ensure the header sticks to the top */
-    
-height: 60px; 
-padding: 0px 1.5% 0px 1.5%;
-display: flex;
-justify-content:space-between;
+  z-index: 2;
+  width: 100vw;
+  position: fixed;
+  top: 0; /* Ensure the header sticks to the top */
+
+  height: 60px;
+  padding: 0px 1.5% 0px 1.5%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.set-flex
-{
-display: flex;
-align-items: center;
+.set-flex {
+  display: flex;
+  align-items: center;
 }
 
-
-#left-div
-{
-display: flex;
-width: 50px;
-justify-content: space-between;
-
+#left-div {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
 }
 
-.three-bar
-{
+.three-bar {
   height: 30px;
   width: 30px;
   margin-right: 25px;
 }
-.youtube-icon
-{
+.youtube-icon {
   height: 22px;
-width: 30px;
-margin-right: 4px;
-cursor: pointer; /* Pointer cursor on hover */
+  width: 30px;
+  margin-right: 4px;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-#meddle-div
-{ 
-width: 600px;  
+#meddle-div {
+  width: 600px;
 }
 
-#input-box
-{
-border-radius: 30px ;
-height: 38px;
-padding: 5px;
-width: 600px;
+#input-box {
+  border-radius: 30px;
+  height: 38px;
+  padding: 5px;
+  width: 600px;
 }
 
-#search-input
-{
-height: 38px;
-padding-left: 10px;
-background-color: transparent;
-width: 600px;
-border: 1px solid rgb(255, 255, 255);
-border-radius: 20px 0px 0px 20px ;
-color: white;
+#search-input {
+  height: 38px;
+  padding-left: 10px;
+  background-color: transparent;
+  width: 600px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px 0px 0px 20px;
+  color: white;
 }
-#search-input:focus
-{
-border: 1px solid rgb(94, 94, 239);
-outline: none;
+#search-input:focus {
+  border: 1px solid rgb(94, 94, 239);
+  outline: none;
 }
 
-#search-button
-{
-height: 38px;
-width: 100px;
-display: flex;
-align-items: center;
-justify-content: center;
-border: 1px solid rgb(255, 255, 255);
-background-color: transparent;
-border-left: none;
-border-radius: 0 20px 20px 0; 
-cursor: pointer; /* Pointer cursor on hover */ 
+#search-button {
+  height: 38px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer; /* Pointer cursor on hover */
 }
-#microphone-icon
-{
-background-color: rgb(34, 34, 34) ;
-margin-left: 15px;
-border-radius: 20px;
-height: 35px;
-width: 35px;
-padding: 3px;
+#microphone-icon {
+  background-color: rgb(34, 34, 34);
+  margin-left: 15px;
+  border-radius: 20px;
+  height: 35px;
+  width: 35px;
+  padding: 3px;
 
-cursor: pointer; /* Pointer cursor on hover */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-#right-div
-{
-width: 130px;   
+#right-div {
+  width: 130px;
 
-justify-content: space-between;
+  justify-content: space-between;
 }
 
-.curser-pointer
-{
-cursor: pointer; /* Pointer cursor on hover */
-
+.curser-pointer {
+  cursor: pointer; /* Pointer cursor on hover */
 }
-.user-pic
-{
-height: 35px;
-width: 35px;
-border-radius: 20px;
-cursor: pointer; /* Pointer cursor on hover */
+.user-pic {
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.icon-size
-{
+.icon-size {
   height: 20px;
-width: 20px;
-cursor: pointer; /* Pointer cursor on hover */
+  width: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
 }
-.channel-profile
-{
+.channel-profile {
   height: 30px;
   width: 30px;
   border-radius: 20px;
   cursor: pointer; /* Pointer cursor on hover */
 }
 
-.noti-button
-{
+.noti-button {
   border: none;
   background-color: transparent;
 }
-.notifications-box
-{
+.notifications-box {
   background-color: transparent;
-  
-
 }
-.notifications-box a:hover 
-{background-color: #1f1f1f;}
+.notifications-box a:hover {
+  background-color: #1f1f1f;
+}
 
-.dropdown-content
-{ 
+.dropdown-content {
   background-color: rgb(48, 49, 49);
   display: none;
   min-width: 100px;
   margin-top: 10px;
   position: absolute;
-
 }
 .dropdown-content a {
   padding: 20px;
- 
+
   color: rgb(255, 255, 255);
   text-decoration: none;
   display: block;
 }
 
-.show
-{
+.show {
   display: block;
 }
 
+/*--------------------- side_bar section -------------- */
 
-                                   /*--------------------- side_bar section -------------- */
-
-
-
-
-
-
-
-
-                                   /*--------------------- main section -------------- */
-.container
-{
+/*--------------------- main section -------------- */
+.container {
   position: absolute;
   margin-left: 18%;
   width: 82%;
   margin-top: 60px;
-  background-color: grey;
- 
 }
 
-.large-container
-{ margin-left: 5%;
+.large-container {
+  margin-left: 5%;
   width: 95%;
+}
+
+.Shorts-container {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }

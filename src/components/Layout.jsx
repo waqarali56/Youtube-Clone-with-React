@@ -1,23 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import Header from "./Header";
 import SideNavbar from "./SideBar/SideNavbar";
 
-export default function Layout({ onChangeInput, children }) {
-  const [sideBar, setSideBar] = useState(true);
+import { Context } from "../State/StateProvider"; // Import the context
 
-  function onClickMenu() {
-    setSideBar(!sideBar);
-  }
+export default function Layout({ children }) {
+  const { sideBar } = useContext(Context);
   return (
     <div>
-      <Header onClickMenu={onClickMenu} onChangeInput={onChangeInput} />
-
-      <SideNavbar sideBar={sideBar} />
-      <div
-        className={`container ${
-          sideBar ? "" : "large-container"
-        }`}
-      >
+      <Header />
+      <SideNavbar />
+      <div className={`container ${sideBar ? "" : "large-container"}`}>
         {children}
       </div>
     </div>
