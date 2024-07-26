@@ -54,43 +54,7 @@ img {
   display: inline-block;
 }
 
-#top_bar_container {
-  background-color: black;
-  height: 30px;
-  margin-top: 0px;
-  padding-left: 10px;
-  width: 100%;
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  overflow-x: scroll;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-#top_bar_container::-webkit-scrollbar {
-  display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-#top_bar_container {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.category {
-  margin-left: 10px;
-  padding: 5px;
-  font: bold;
-  height: 20px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(40, 40, 40);
-  color: white;
-  border-radius: 5px 5px;
-}
-.category:hover {
-  background-color: rgb(171, 16, 16);
-}
+
 
 /*---------------------right video container -------------- */
 
