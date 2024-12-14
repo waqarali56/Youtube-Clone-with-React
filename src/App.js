@@ -4,7 +4,6 @@ import Layout from "./components/Layout";
 import Videos from "./components/VideoComponents/Videos";
 import OpenVideo from "./components/OpenVideo/OpenVideo";
 import { Route, Routes } from "react-router-dom";
-import State from "./State/StateProvider";
 import StateProvider from "./State/StateProvider";
 import Shorts from "./components/shorts/Shorts";
 
